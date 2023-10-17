@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container {
+      position: relative;
+    }
+
+    .kotak-hitam {
+      position: relative;
+      border: 2px solid black;
+      height: 100px;
+      margin: 30px;
+    }
+
+    .kotak-abu {
+      position: absolute;
+      background: lightgray;
+      height: 60px;
+      width: 70%;
+      left: 50px;
+      top: 50px;
+    }
+
+    .kotak-hijau {
+      position: absolute;
+      background: lightgreen;
+      width: 35%;
+      left: 270px;
+      top: -15px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Elemen Tumpang Tindih</h1>
+
+  <p>Jika dua elemen yang ditempatkan tumpang tindih satu 
+    sama lain tanpa ada pengaturan z-index, maka elemen yang
+    didefinisikan terakhir dalam kode HTML akan ditampilkan 
+    di atas:</p>
+
+  <div class="container">
+    <div class="kotak-hitam">Kotak Hitam</div>
+    <div class="kotak-abu">Kotak Abu-abu</div>
+    <div class="kotak-hijau">Kotak Hijau</div>
+  </div>
+
+</body>
+
+</html>
